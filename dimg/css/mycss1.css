@@ -1,0 +1,106 @@
+.mycurrent{
+    color:#495057 ;
+    text-align: center;
+    font-size: 9px;
+
+
+  }
+  .button1 {
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+
+
+}
+  .fab_faceebook {
+  background-color: white;
+  font-family: 'Font Awesome 5 Brands';
+  -font-weight: 400;
+  color: #1c64d1;
+  
+}
+
+.myfacebook:hover{
+
+background-color: #495057;
+color:rgb(255, 255, 255);
+}
+  .myfacebook{
+    
+    width: 200px ;
+    height: 28px;
+    background-color:  #1c64d1; /* blue */
+    border: none;
+    color: white;
+    margin-top: 9px;
+    -text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+   .mygoogle:hover{
+    background-color: #495057;
+    color:rgb(255, 255, 255);
+    }  
+  .mygoogle{
+    width: 200px ;
+    height: 28px;
+    background-color:  #f5f6f7; /* blue */
+    border: none;
+    color: #000000;
+    margin-top: 3px;
+    -text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;;
+  }
+  .anamithion2{
+    width: 220px ;
+    height: 28px;
+    text-align: right;
+    font-size: 14px;
+    
+  }
+  .border_from1
+  {
+    border-style: groove ;
+     width: 50%;
+      height: 50%;
+    }
+    .bb{
+      text-align: right;
+       color:white;
+    }
+    .sizeimag
+    {
+      height: 12rem;
+       width: 17.9rem; 
+       justify-content:left
+    }
+    .mygoogles{
+      width: 200px ;
+        height: 28px;
+        background-color:  #f5f6f7; /* blue */
+        border: none;
+        color: #000000;
+        margin-top: 3px;
+        -text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;;
+    }
+    .mygoogles:hover{
+    background-color: #495057;
+    color:rgb(255, 255, 255);
+    }
+a:hover{
+
+  text-decoration:none;
+  
+}

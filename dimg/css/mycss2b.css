@@ -1,0 +1,30 @@
+.mycolor:hover{
+
+    color:white;
+    background-color: #343a40;
+  }
+  .myboldmuseaggred:hover{
+    color:green;
+    font-weight: bold;
+  background-color: white;
+  }
+  .myboldmuseNoAgrred:hover{
+    color:red;
+    font-weight: bold;
+  background-color: white;
+  }
+  
+  .myboldmuseaggred
+  {
+    color:green; font-weight: bold;
+  }
+  .myboldmuseNoAgrred
+  {
+    color:red ; font-weight: bold;
+  }
+  .mycrown{
+  }
+  color: #343a40;
+  color:rgba(255,255,255,0.5);
+  
+  }
