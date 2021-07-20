@@ -54,7 +54,7 @@ for( $j=0; $j<$mydiv ; $j++)
          { $kay=(3 * $j) +$k;
            ?>
                   <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">
-                  <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay];    ?>">
+                  <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay];    ?>&p=<?php echo $place;    ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                        <img src="<?php echo searching($cars[0][$kay]); ?>" class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.nnn.com">
@@ -85,7 +85,7 @@ for( $j=0; $j<$mydiv ; $j++)
   <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">
 </div>
 <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">
-                  <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay+1];    ?>">
+                  <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay+1];    ?>&p=<?php echo $place;    ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                      <img src="<?php echo searching($cars[0][$kay+1]); ?>"   class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.nnn.com">
@@ -98,7 +98,7 @@ for( $j=0; $j<$mydiv ; $j++)
                                 </div>
                  </div>                                    
                  <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;  ">
-                 <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay+2];    ?>">
+                 <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay+2];    ?>&p=<?php echo $place;    ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                      <img src="<?php echo searching($cars[0][$kay+2]); ?>"  class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.nnn.com">
@@ -132,7 +132,7 @@ for( $j=0; $j<$mydiv ; $j++)
      <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">    
      </div>                                    
                      <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;  ">
-                     <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay+1];    ?>">
+                     <a href="https://shabee.ga/30.php?id_place=<?php echo $cars[0][$kay+1];    ?>&p=<?php echo $place;    ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                   <img src="<?php echo searching($cars[0][$kay+1]); ?>"     class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.bb.com">

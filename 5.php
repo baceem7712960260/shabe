@@ -56,6 +56,7 @@ $conns=mysqli_connect("sql311.epizy.com","epiz_27557681","bNdNy4DhUPHnCL","epiz_
 mysqli_query($conns,"set NAMES utf8");
 $counter=0;
 $place=trim($_GET["place"]);
+
 $q="SELECT place.ID_PLACE, place.NAME , GROUP_CONCAT(description.MYDESCRIPTION ORDER by description_activ.ID_DESC DESC SEPARATOR '@') as descr FROM place INNER JOIN place_active on place_active.ID_PLACE=place.ID_PLACE LEFT JOIN description on place_active.ID_PA=description.ID_PA LEFT JOIN description_activ on description.ID_DESC=description_activ.ID_DESC WHERE place.NAME LIKE '%$place%' GROUP by place_active.ID_PA";
 
 $result=mysqli_query($conns,$q);
@@ -100,7 +101,7 @@ for( $j=0; $j<$mydiv ; $j++)
          { $kay=(3 * $j) +$k;
            ?>
                   <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">
-                  <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay];    ?>">
+                  <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay];    ?>&p=<?  echo $place; ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                        <img src="<?php echo searching($cars[0][$kay]); ?>" class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.nnn.com">
@@ -131,7 +132,7 @@ for( $j=0; $j<$mydiv ; $j++)
   <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">
 </div>
 <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">
-                  <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay+1];    ?>">
+                  <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay+1];    ?>&p=<?  echo $place; ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                      <img src="<?php echo searching($cars[0][$kay+1]); ?>"   class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.nnn.com">
@@ -144,7 +145,7 @@ for( $j=0; $j<$mydiv ; $j++)
                                 </div>
                  </div>                                    
                  <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;  ">
-                 <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay+2];    ?>">
+                 <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay+2];    ?>&p=<?  echo $place; ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                      <img src="<?php echo searching($cars[0][$kay+2]); ?>"  class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.nnn.com">
@@ -178,7 +179,7 @@ for( $j=0; $j<$mydiv ; $j++)
      <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;">    
      </div>                                    
                      <div class="col-sm-12 col-md-4" style="padding:10px ; justify-content: center;display: flex;  ">
-                     <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay+1];    ?>">
+                     <a href="https://shabee.ga/6.php?id_place=<?php echo $cars[0][$kay+1];    ?>&p=<?  echo $place; ?>">
                      <div class=" card" style="width: 18rem;background-color:#343a40;">
                      
                                   <img src="<?php echo searching($cars[0][$kay+1]); ?>"     class=" card-img-top " style=" height: 12rem; width: 17.9rem;"  alt="www.bb.com">
@@ -219,7 +220,7 @@ echo "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
 <br><br>
 
 <?php
-echo searching(278);
+
 include ('footer.php');
 
 
@@ -255,9 +256,9 @@ $myimage ="place\\".$id_place.".".$total["extension"];
 }
 
   $subEnding=strstr("123dfasdfasdf4.567",".",false);
-  echo $subEnding;
+
  
   $xx2= strlen($subEnding);
-  echo $xx2-1;
+  
 
 ?>

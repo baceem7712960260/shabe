@@ -5,7 +5,7 @@ if($_SERVER['REQUEST_METHOD']=="GET")
 
 
 $id_place=$_GET["id_place"];
-
+$place=$_GET["p"];
 
 $arrayfile=scandir(__DIR__.'/place//');
   
@@ -85,8 +85,9 @@ $myname1=str_replace(" ","_",$myname) ;
 <br>
            <div style="padding: 20px;" >   <a href=<?php echo "31.php?idap=$idap&myiddesc=$myiddesc&id_place=$id_place&myimage=$myimage&myname=$myname1"; ?> >  <div typt="file"   class="btn btn-outline-dark">تعديل</div></a></div>
 
-<br>
 
+<div style="padding: 20px;" >   <a href=<?php echo "8.php?place=$place"; ?> >  <div typt="file"   class="btn btn-outline-dark">رجوع</div></a></div>
+<br>
  </div>  
 <?php
 include ('footer.php');

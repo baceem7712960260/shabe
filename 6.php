@@ -61,7 +61,7 @@ if($_SERVER['REQUEST_METHOD']=="GET")
 
 
 $id_place=$_GET["id_place"];
-
+$place=$_GET["p"];
 
 $arrayfile=scandir(__DIR__.'/place//');
   
@@ -134,6 +134,7 @@ if(mysqli_num_rows($results1)>0)
         </div>           
 
 <br>
+<div style="padding: 20px;" >   <a href=<?php echo "5.php?place=$place"; ?> >  <div typt="file"   class="btn btn-outline-dark">رجوع</div></a></div>
 <br>
          
 </div>
