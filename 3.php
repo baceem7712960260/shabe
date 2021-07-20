@@ -16,7 +16,7 @@ $e="https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=onl
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <title>Hello, world!</title>
+    <title>اهلنا الشعب</title>
   </head>
 <style>
     .mygoogles{
