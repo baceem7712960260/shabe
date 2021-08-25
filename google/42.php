@@ -60,7 +60,7 @@ $result=mysqli_query($conn,$q2);
 
 $result3=mysqli_query($conn,$q3);
 echo "<br><br><br><br>";
-echo "<p style=\"color:green;font-size: 30px;text-align: center;\">تم التسجيل  <//p>";
+echo "<p style=\"color:green;font-size: 30px;text-align: center;\">تم تسجيلك انتظر لكي يتم تفعيل حسابك  <//p>";
 header("refresh:10;url=../3.php");
 }
 else
